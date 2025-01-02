@@ -1,0 +1,22 @@
+<!-- user/message.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Messages</title>
+</head>
+<body>
+    <div th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
+        <h1>User Messages</h1>
+        <div>
+            <p>Welcome, <span th:text="${username}">User</span>!</p>
+            <p>This is your message page.</p>
+        </div>
+        <div>
+            <h3>Messages:</h3>
+            <ul>
+                <li th:each="message : ${messages}" th:text="${message}"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

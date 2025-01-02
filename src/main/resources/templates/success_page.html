@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"
+  th:replace="~{base :: parent(~{::#content}, ~{::title}, ~{::script})}">
+<head>
+  <title>Success</title>
+</head>
+<body>
+  <div id="content" class="text-center mt-5 md:w-1/2 mx-auto">
+    <h1 class="text-green-600 text-2xl font-bold">Success!</h1>
+    <p class="text-gray-700 mt-2">Your email has been successfully verified.</p>
+    
+    <a href="/login" class="bg-green-900 mt-4 text-white px-4 py-2 rounded-md inline-block">
+      Go to Login
+    </a>
+  </div>
+  
+  <script>
+    console.log("Success Page Loaded");
+  </script>
+</body>
+</html>

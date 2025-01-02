@@ -1,0 +1,19 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::content},~{::title},~{::script})}">
+  <head>
+    <title>Error Page</title>
+  </head>
+  <body>
+    <div id="content" class="text-center mt-5 md:w-1/2 mx-auto">
+      <div th:replace="message::messagebox"></div> <!-- Include the message box dynamically -->
+      <button class="bg-gray-900 mt-2 text-white px-3 py-2 rounded">
+        Login
+      </button>
+    </div>
+
+    <script>
+      console.log("Home page loaded");
+    </script>
+  </body>
+</html>
