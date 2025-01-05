@@ -109,5 +109,12 @@ public class User implements UserDetails {
     public String getPassword() {
         return this.password;
     }
+    public void enableUser() {
+        if (this.emailVerified) { // User can only be enabled if the email is verified
+            this.enabled = true;
+        } else {
+            throw new IllegalStateException("Email not verified, cannot enable user");
+        }
+    }
 
 }

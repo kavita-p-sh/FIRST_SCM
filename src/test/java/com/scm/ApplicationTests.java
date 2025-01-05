@@ -22,17 +22,17 @@ class ApplicationTests {
     System.out.println("Service successfully loaded!");
 }
 
-    // @Test
-    // void sendEmailTest() {
-    //     // Mock the behavior of the sendEmail method (without actually sending an email)
-    //     service.sendEmail(
-    //         "prajapatikavita132004@gmail.com", 
-    //         "Just managing the emails", 
-    //         "This is SCM project working on email service"
-    //     );
-    //     // Validate that the sendEmail method was called (use Mockito verification if needed)
-    //     assertThat(true).isTrue(); // Dummy assertion to ensure the method executes (you can replace this with a more meaningful check)
-    // }
+    @Test
+    void sendEmailTest() {
+        // Mock the behavior of the sendEmail method (without actually sending an email)
+        service.sendEmail(
+            "prajapatikavita132004@gmail.com", 
+            "Just managing the emails", 
+            "This is SCM project working on email service"
+        );
+        // Validate that the sendEmail method was called (use Mockito verification if needed)
+        assertThat(true).isTrue(); // Dummy assertion to ensure the method executes (you can replace this with a more meaningful check)
+    }
 
     @Test
     void testUnits() {
