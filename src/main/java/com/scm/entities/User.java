@@ -110,11 +110,9 @@ public class User implements UserDetails {
         return this.password;
     }
     public void enableUser() {
-        if (this.emailVerified) { // User can only be enabled if the email is verified
-            this.enabled = true;
-        } else {
-            throw new IllegalStateException("Email not verified, cannot enable user");
-        }
+        this.enabled = true;
     }
-
+    
+    
 }
+
